@@ -8,7 +8,7 @@
 /* Estilo del cuerpo */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #e0f7fa;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #4A90E2;
+    background-color: #ffffff; /* Fondo blanco */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,13 +58,13 @@ main {
     font-size: 18px;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #0288d1;
     margin-bottom: 20px;
     transition: border-color 0.3s;
 }
 
 .textarea:focus {
-    border-color: #4A90E2;
+    border-color: #0288d1;
     outline: none;
 }
 
@@ -77,7 +77,7 @@ main {
 .boton_encriptar, .boton_desencriptar, .boton_copiar {
     width: 32%;
     height: 45px;
-    background-color: #4A90E2;
+    background-color: #0288d1;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -88,7 +88,7 @@ main {
 }
 
 .boton_encriptar:hover, .boton_desencriptar:hover, .boton_copiar:hover {
-    background-color: #357ABD;
+    background-color: #0277bd;
     transform: translateY(-2px);
 }
 
@@ -96,7 +96,20 @@ main {
     transform: translateY(0);
 }
 
-/* Estilo para la sección de la imagen y texto */
+/* Estilo del footer */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #0288d1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+/* Sección de la imagen y el resultado */
 .contenedor_imagen {
     width: 100%;
     text-align: center;
@@ -109,33 +122,6 @@ main {
     margin: 0 auto;
 }
 
-.contenedor_subtitulo h3 {
-    font-size: 22px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.contenedor_parrafo p {
-    font-size: 16px;
-    color: #777;
-    text-align: center;
-}
-
-/* Estilo del footer */
-footer {
-    width: 100%;
-    height: 60px;
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-top: 40px;
-}
-
-/* Sección de resultados */
 .contenedor_resultado {
     text-align: center;
     padding: 10px;
@@ -144,7 +130,7 @@ footer {
 
 #tituloResultado {
     font-size: 22px;
-    color: #4A90E2;
+    color: #0288d1;
 }
 
 #textoResultado {
@@ -152,4 +138,3 @@ footer {
     color: #333;
     margin-top: 10px;
 }
-

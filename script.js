@@ -9,20 +9,19 @@ function encriptar() {
         .replace(/u/img, "ufat");
 
     document.getElementById("textoResultado").textContent = textoEncriptado;
-    document.getElementById("botonCopiar").style.display = "inherit";
 }
 
 function desencriptar() {
     var frase = document.getElementById("textoEncriptado").value.toLowerCase();
 
-    var textoEncriptado = frase
+    var textoDesencriptado = frase
         .replace(/enter/img, "e")
         .replace(/ober/img, "o")
         .replace(/imes/img, "i")
         .replace(/ai/img, "a")
         .replace(/ufat/img, "u");
 
-    document.getElementById("textoResultado").textContent = textoEncriptado;
+    document.getElementById("textoResultado").textContent = textoDesencriptado;
 }
 
 function copiar() {
@@ -33,6 +32,6 @@ function copiar() {
 }
 
 // Añadir los event listeners
-document.querySelector("#botonEncriptado").onclick = encriptar;
-document.querySelector("#botonDesencriptado").onclick = desencriptar;
-document.querySelector("#botonCopiar").onclick = copiar;
+document.querySelector("#botonEncriptado").addEventListener("click", encriptar);
+document.querySelector("#botonDesencriptado").addEventListener("click", desencriptar);
+document.querySelector("#botonCopiar").addEventListener("click", copiar);
